@@ -7,6 +7,29 @@
   margin: 0;
   padding: 0;
 }
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  width: 360px;
+  background-color: rgba(
+    240,
+    128,
+    128,
+    0.9
+  ); /* Set the background color (you can change this) */
+  text-align: center;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 30px 30px; /* Rounded corners at the bottom */
+  margin: 0 auto;
+  color: rgb(250, 245, 228); /* Set text color */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
 
 body {
   background-image: url("./body\ background.jpg");
@@ -24,7 +47,131 @@ body {
   padding-bottom: 40px;
 }
 
-h1 {
+.list,
+ol.answer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.question {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: large;
+  font-style: oblique;
   text-align: center;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.card--highlight {
+  color: rgb(255, 255, 255);
+
+  align-self: center;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.cards-container .card:first-child {
+  background-color: rgb(143, 216, 210, 0.7);
+  margin-top: 60px;
+}
+
+.cards-container .card:nth-child(2) {
+  color: rgb(52, 52, 52);
+  background-color: rgba(254, 230, 94, 0.7);
+}
+
+.cards-container .card:nth-child(3) {
+  background-color: rgba(173, 140, 240, 0.7);
+}
+
+.cards-container .card:nth-child(4) {
+  background-color: rgb(180, 34, 34, 0.7);
+}
+
+.cards-container .card:nth-child(5) {
+  background-color: rgba(128, 220, 251, 0.7);
+}
+
+.cards-container .card:nth-child(6) {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.cards-container .card:nth-child(7) {
+  background-color: rgba(252, 125, 189, 0.7);
+}
+
+.cards-container .card:nth-child(8) {
+  background-color: rgb(192, 192, 192, 0.7);
+}
+
+.cards-container .card:nth-child(9) {
+  background-color: rgb(139, 69, 19, 0.7);
+}
+
+.cards-container .card:nth-child(10) {
+  background-color: rgb(25, 25, 112, 0.7);
+}
+
+.cards-container .card:nth-child(11) {
+  color: rgb(52, 52, 52);
+  background-color: rgb(250, 245, 228, 0.7);
+  margin-bottom: 60px;
+}
+
+ol.answer li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 360px;
+  background-color: rgba(240, 128, 128, 0.9);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link svg {
+  fill: rgb(250, 245, 228, 0.9);
+  stroke: rgb(250, 245, 228);
+  width: 24px;
+  height: 24px;
 }
