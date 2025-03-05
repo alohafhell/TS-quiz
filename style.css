@@ -1,43 +1,25 @@
-@import url(footer.css);
-@import url(card.css);
-@import url(header.css);
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-h1 {
-  text-align: center;
-  padding: 10px;
 }
 
 h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(
-    240,
-    128,
-    128,
-    0.9
-  ); /* Set the background color (you can change this) */
+  background-color: rgba(240, 128, 128, 0.9);
   text-align: center;
   left: 0;
   right: 0;
-  border-radius: 0 0 30px 30px; /* Rounded corners at the bottom */
+  border-radius: 0 0 30px 30px;
   margin: 0 auto;
   color: rgb(250, 245, 228); /* Set text color */
-  font-size: 1.5em; /* Adjust font size as needed */
+  font-size: 1.7em; /* Adjust font size as needed */
+  padding: 20px;
 }
 
 body {
-  background-image: url("./body\ background.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -45,6 +27,20 @@ body {
   min-height: 100vh;
   width: 100%;
   padding-bottom: 40px;
+}
+
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./body background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  z-index: -1;
 }
 
 .list,
@@ -71,22 +67,33 @@ ol.answer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
-  max-width: 300px;
+  width: 90%;
   margin-bottom: 20px;
+  margin-bottom: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card--highlight {
   color: rgb(255, 255, 255);
-
   align-self: center;
   padding: 30px;
   border-radius: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  width: 90%;
 }
 
 .cards-container .card:first-child {
@@ -146,6 +153,59 @@ ol.answer li {
   flex-direction: column;
 }
 
+.answer-button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.answer-button:hover {
+  opacity: 0.8;
+}
+
+.cards-container .card:nth-child(1) .answer-button {
+  background-color: rgba(143, 216, 210, 0.7);
+}
+.cards-container .card:nth-child(2) .answer-button {
+  background-color: rgba(254, 230, 94, 0.7);
+  color: rgb(52, 52, 52);
+}
+.cards-container .card:nth-child(3) .answer-button {
+  background-color: rgba(173, 140, 240, 0.7);
+}
+.cards-container .card:nth-child(4) .answer-button {
+  background-color: rgb(180, 34, 34, 0.7);
+}
+.cards-container .card:nth-child(5) .answer-button {
+  background-color: rgba(128, 220, 251, 0.7);
+}
+.cards-container .card:nth-child(6) .answer-button {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+.cards-container .card:nth-child(7) .answer-button {
+  background-color: rgba(252, 125, 189, 0.7);
+}
+.cards-container .card:nth-child(8) .answer-button {
+  background-color: rgb(192, 192, 192, 0.7);
+}
+.cards-container .card:nth-child(9) .answer-button {
+  background-color: rgb(139, 69, 19, 0.7);
+}
+.cards-container .card:nth-child(10) .answer-button {
+  background-color: rgb(25, 25, 112, 0.7);
+}
+.cards-container .card:nth-child(11) .answer-button {
+  background-color: rgb(250, 245, 228, 0.7);
+  color: rgb(52, 52, 52);
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -155,6 +215,7 @@ footer {
   left: 0;
   right: 0;
   border-radius: 30px 30px 0 0;
+  z-index: 1;
 }
 
 .footer-list {
