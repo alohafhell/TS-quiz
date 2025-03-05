@@ -1,0 +1,23 @@
+@import url(footer.css);
+@import url(card.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}

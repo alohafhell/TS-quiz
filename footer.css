@@ -1,0 +1,30 @@
+footer {
+  position: fixed;
+
+  bottom: 0;
+  width: 360px;
+  background-color: rgb(66, 238, 36);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link svg {
+  fill: none;
+  stroke: black;
+  width: 24px;
+  height: 24px;
+}
