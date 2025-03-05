@@ -38,7 +38,7 @@ body {
   background-image: url("./body background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center top;
   z-index: -1;
 }
@@ -49,6 +49,7 @@ ol.answer {
   padding: 0;
   margin: 0;
 }
+
 .question {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
@@ -69,7 +70,6 @@ ol.answer {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
-  position: relative;
   z-index: 1;
 }
 
