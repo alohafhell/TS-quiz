@@ -10,12 +10,11 @@ Her philanthropic work
 
 2 What unexpected natural event occurred during an Eras Tour concert in Australia, causing a brief moment of surprise for both Taylor Swift and the audience?
 A sudden hailstorm
-
    <li class="correct">A minor earthquake**
      A flock of birds interrupting the show
     A power outage
 
-3 FWhat's the approximate length of an Eras Tour concert, making it a very long show?
+3 What's the approximate length of an Eras Tour concert, making it a very long show?
 1 hour and 30 minutes
 2 hours
 <li class="correct"> Over 3 hours
