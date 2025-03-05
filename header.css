@@ -1,0 +1,18 @@
+h1 {
+  position: fixed;
+  top: 0;
+  width: 360px;
+  background-color: rgba(
+    240,
+    128,
+    128,
+    0.9
+  ); /* Set the background color (you can change this) */
+  text-align: center;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 30px 30px; /* Rounded corners at the bottom */
+  margin: 0 auto;
+  color: rgb(250, 245, 228); /* Set text color */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
