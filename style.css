@@ -223,6 +223,14 @@ ol.answer li {
   color: rgb(52, 52, 52);
 }
 
+.card-hashtags {
+  margin-top: 15px;
+  font-size: 0.9em; /* Adjust font size as needed */
+  color: inherit; /* Adjust color as needed */
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 footer {
   position: fixed;
   bottom: 0;
