@@ -33,11 +33,12 @@ body {
 .background-wrapper {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 477px;
   height: 100%;
   background-image: url("./body background.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
