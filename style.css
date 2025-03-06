@@ -284,10 +284,3 @@ footer {
 .footer-link {
   text-decoration: none;
 }
-
-.footer-link svg {
-  fill: rgb(250, 245, 228, 0.9);
-  stroke: rgb(250, 245, 228);
-  width: 24px;
-  height: 24px;
-}
