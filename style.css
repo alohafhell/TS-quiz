@@ -27,21 +27,39 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   padding-bottom: 40px;
 }
 
 .background-wrapper {
-  position: fixed;
+  position: fixed; /* Keep the background fixed in place */
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 477px; /* Mobile-friendly width */
   height: 100%;
   background-image: url("./body background.jpg");
-  background-size: contain;
+  background-size: cover; /* Ensure it covers the area */
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center top;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .background-wrapper {
+    width: 100%; /* Make the background width responsive */
+    background-size: contain; /* Ensure the aspect ratio is maintained on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .background-wrapper {
+    width: 100%; /* Adjust to fit the mobile viewport */
+    height: 100%; /* Ensure it covers the full height of the screen */
+    background-size: contain; /* Use contain to maintain aspect ratio */
+    background-position: center top;
+  }
 }
 
 .content-wrapper {
