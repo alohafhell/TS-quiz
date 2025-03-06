@@ -129,7 +129,7 @@ ol.answer {
 .cards-container .card:nth-child(4) {
   color: rgb(52, 52, 52);
   background-color: rgb(250, 245, 228, 0.7);
-  margin-bottom: 60px;
+  margin-bottom: 5px;
 }
 
 ol.answer li {
