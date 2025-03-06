@@ -36,6 +36,13 @@ body::before {
   pointer-events: none; /* Prevent the background from interacting with scrolling */
 }
 
+@media (max-width: 768px) {
+  body::before {
+    width: 100%;
+    background-size: contain;
+  }
+}
+
 .background-wrapper {
   position: fixed; /* Keep the background fixed in place */
   top: 0;
