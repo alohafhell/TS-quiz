@@ -33,18 +33,24 @@ body {
 }
 
 .background-wrapper {
-  position: fixed;
+  position: fixed; /* Keep the background fixed in place */
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 477px;
+  width: 477px; /* Mobile-friendly width */
   height: 100%;
   background-image: url("./body background.jpg");
-  background-size: cover;
+  background-size: cover; /* Ensure it covers the area */
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center top;
-  z-index: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .background-wrapper {
+    width: 100%; /* Make the background width responsive */
+    background-size: contain; /* Ensure the aspect ratio is maintained on mobile */
+  }
 }
 
 @media (max-width: 768px) {
