@@ -7,7 +7,7 @@
 h1 {
   position: fixed;
   top: 0;
-  width: 100%;
+  max-width: 477px;
   background-color: rgba(240, 128, 128, 0.9);
   text-align: center;
   left: 0;
@@ -17,6 +17,7 @@ h1 {
   color: rgb(250, 245, 228); /* Set text color */
   font-size: 1.7em; /* Adjust font size as needed */
   padding: 20px;
+  z-index: 2;
 }
 
 body {
@@ -36,11 +37,19 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("./body background.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   z-index: -1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px;
 }
 
 .list,
@@ -76,6 +85,17 @@ ol.answer {
 .card {
   width: 90%;
   margin-bottom: 20px auto;
+  position: relative;
+}
+
+.card-bookmark-button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .cards-container {
@@ -142,7 +162,6 @@ ol.answer {
 }
 
 ol.answer li {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   list-style: none;
   padding: 0;
   margin: 10px 0;
@@ -151,6 +170,7 @@ ol.answer li {
 }
 
 .answer-button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 100%;
   padding: 12px 20px;
   margin: 5px 0;
@@ -203,12 +223,21 @@ ol.answer li {
   color: rgb(52, 52, 52);
 }
 
+.card-hashtags {
+  margin-top: 15px;
+  font-size: 0.9em; /* Adjust font size as needed */
+  color: inherit; /* Adjust color as needed */
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  max-width: 476px;
   background-color: rgba(240, 128, 128, 0.9);
   margin: 0 auto;
+  padding: 10px;
   left: 0;
   right: 0;
   border-radius: 30px 30px 0 0;
