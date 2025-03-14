@@ -22,21 +22,3 @@ answerButton.addEventListener("click", () => {
   console.log("click");
   hiddenAnswer.hidden = !hiddenAnswer.hidden;
 });
-
-const cardBookmarkButton = document.querySelector(
-  '[js-data="card-bookmark-button"]'
-);
-const cardBookmarkIcon = document.querySelector(
-  '[js-data="card-bookmark-icon"]'
-);
-let isFilled = false;
-
-cardBookmarkButton.addEventListener("click", () => {
-  if (isFilled) {
-    cardBookmarkIcon.setAttribute("fill", "none");
-    isFilled = false;
-  } else {
-    cardBookmarkIcon.setAttribute("fill", "white");
-    isFilled = true;
-  }
-});
