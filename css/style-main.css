@@ -298,3 +298,9 @@ footer {
 .footer-link {
   text-decoration: none;
 }
+
+.hidden-answer {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}

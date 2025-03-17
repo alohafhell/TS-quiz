@@ -149,14 +149,43 @@ ol.answer-container {
 }
 
 .cards-container .card:nth-child(2) {
-  background-color: rgb(180, 34, 34, 0.7);
+  color: rgb(52, 52, 52);
+  background-color: rgba(254, 230, 94, 0.7);
 }
 
 .cards-container .card:nth-child(3) {
-  background-color: rgb(192, 192, 192, 0.7);
+  background-color: rgba(173, 140, 240, 0.7);
 }
 
 .cards-container .card:nth-child(4) {
+  background-color: rgb(180, 34, 34, 0.7);
+}
+
+.cards-container .card:nth-child(5) {
+  background-color: rgba(128, 220, 251, 0.7);
+}
+
+.cards-container .card:nth-child(6) {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.cards-container .card:nth-child(7) {
+  background-color: rgba(252, 125, 189, 0.7);
+}
+
+.cards-container .card:nth-child(8) {
+  background-color: rgb(192, 192, 192, 0.7);
+}
+
+.cards-container .card:nth-child(9) {
+  background-color: rgb(139, 69, 19, 0.7);
+}
+
+.cards-container .card:nth-child(10) {
+  background-color: rgb(25, 25, 112, 0.7);
+}
+
+.cards-container .card:nth-child(11) {
   color: rgb(52, 52, 52);
   background-color: rgb(250, 245, 228, 0.7);
   margin-bottom: 60px;
@@ -205,16 +234,35 @@ ol.answer-element li {
 .cards-container .card:nth-child(1) .answer-element {
   background-color: rgba(143, 216, 210, 0.7);
 }
-
 .cards-container .card:nth-child(2) .answer-element {
+  background-color: rgba(254, 230, 94, 0.7);
+  color: rgb(52, 52, 52);
+}
+.cards-container .card:nth-child(3) .answer-element {
+  background-color: rgba(173, 140, 240, 0.7);
+}
+.cards-container .card:nth-child(4) .answer-element {
   background-color: rgb(180, 34, 34, 0.7);
 }
-
-.cards-container .card:nth-child(3) .answer-element {
+.cards-container .card:nth-child(5) .answer-element {
+  background-color: rgba(128, 220, 251, 0.7);
+}
+.cards-container .card:nth-child(6) .answer-element {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+.cards-container .card:nth-child(7) .answer-element {
+  background-color: rgba(252, 125, 189, 0.7);
+}
+.cards-container .card:nth-child(8) .answer-element {
   background-color: rgb(192, 192, 192, 0.7);
 }
-
-.cards-container .card:nth-child(4) .answer-element {
+.cards-container .card:nth-child(9) .answer-element {
+  background-color: rgb(139, 69, 19, 0.7);
+}
+.cards-container .card:nth-child(10) .answer-element {
+  background-color: rgb(25, 25, 112, 0.7);
+}
+.cards-container .card:nth-child(11) .answer-element {
   background-color: rgb(250, 245, 228, 0.7);
   color: rgb(52, 52, 52);
 }
@@ -250,10 +298,4 @@ footer {
 
 .footer-link {
   text-decoration: none;
-}
-
-.hidden-answer {
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
 }

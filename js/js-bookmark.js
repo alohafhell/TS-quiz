@@ -1,3 +1,4 @@
+// Highlight correct answer
 document.addEventListener("DOMContentLoaded", function () {
   const revealButton = document.querySelector(".answer-button");
 
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Card 2
+//hidden answer/
 
 const answerButton = document.querySelector('[js-data="fearless-button"]');
 const hiddenAnswer = document.querySelector('[js-data="hidden-answer"]');
@@ -23,13 +24,15 @@ answerButton.addEventListener("click", () => {
   hiddenAnswer.hidden = !hiddenAnswer.hidden;
 });
 
+//bookmark
+
 const cardBookmarkButton = document.querySelector(
   '[js-data="card-bookmark-button"]'
 );
 const cardBookmarkIcon = document.querySelector(
   '[js-data="card-bookmark-icon"]'
 );
-let isFilled = false;
+let isFilled = true;
 
 cardBookmarkButton.addEventListener("click", () => {
   if (isFilled) {
