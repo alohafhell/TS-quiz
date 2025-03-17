@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Card 2
+//Show/hide answer
 
 const answerButton = document.querySelector('[js-data="fearless-button"]');
 const hiddenAnswer = document.querySelector('[js-data="hidden-answer"]');
@@ -21,7 +22,14 @@ const hiddenAnswer = document.querySelector('[js-data="hidden-answer"]');
 answerButton.addEventListener("click", () => {
   console.log("click");
   hiddenAnswer.hidden = !hiddenAnswer.hidden;
+  if (hiddenAnswer.hidden) {
+    answerButton.textContent = "Reveal the answer";
+  } else {
+    answerButton.textContent = "Hide the answer";
+  }
 });
+
+//Bookmark button
 
 const cardBookmarkButton = document.querySelector(
   '[js-data="card-bookmark-button"]'
